@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #658666;
+}
+
+header {
+    background-color: #405039;
+    color: rgb(128, 168, 18);
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(128, 168, 18);
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: rgb(128, 168, 18);
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color: #658666;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #405039;
+    color: rgb(128, 168, 18);
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.ombryggeriet {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color:none;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.ombryggeriet-image {
+    flex: 1;
+    max-width: 50%;
+    margin-right: 20px;}
+
+    .ombryggeriet-image img {
+        width: 100%; /* Får billedet til at fylde hele bredden af containeren */
+        height: auto; /* Bevarer billedets proportioner */
+        border-radius: 8px;}
+
+        /* Responsiv Design */
+@media (max-width: 768px) {
+    .ombryggeriet {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+    .ombryggeriet-image, .ombryggeriet-details {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .ombryggeiet-image {
+        margin-bottom: 20px;
+    }
+
+    .products {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 20px;
+        background-color: white;
+        margin: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .product-item {
+        flex: 1 1 20%;
+        margin: 0 10px;
+        text-align: center;
+    }
+    
+    .product-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    
+    .product-item h2 {
+        margin-top: 10px;
+        font-size: 1.5em;
+    }
+    
+    .product-item p {
+        margin-top: 5px;
+        font-size: 1em;
+        color: #666;
+    }
+
+    .vision {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background-color: none;
+        margin: 20px;
+        border-radius: 8px;
+        box-shadow: none;
+    }
+    
+    .vision-text {
+        flex: 1;
+        padding: 20px;
+    }
+    
+    .vision-text h2 {
+        font-size: 1.5em;
+    }
+    
+    .vision-text p {
+        font-size: 1em;
+        color: #000000;
+    }
+    
+    .vision-image {
+        flex: 1;
+        padding: 20px;
+    }
+    
+    .vision-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    footer {
+        background-color: #405039;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+        position: relative;
+        width: 100%;
+    }
+    
+    /* Responsiv Design */
+    @media (max-width: 768px) {
+        .products {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .product-item {
+            max-width: 100%;
+            margin: 10px 0;
+        }
+    }
+
+/* Responsiv Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    header, footer {
+        padding: 0.5em 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 5px;
+    }
+}
